@@ -3,17 +3,20 @@ public class Student {
     private String firstname = "Hello";
     private String lastname = "World";
 
-    public Student(String firstname, String lastname){
+  @Override
+   /* public Student(String firstname, String lastname){
         this.firstname = firstname;
         this.lastname = lastname;
-    }
+    }*/
     
-    @Override
+
+   
+
     public String toString(){
-        return "My first name "+firstname+" lastname "+lastname;
+      return "My first name "+firstname+" lastname "+lastname;
     }
     public static void main(String[]args){
-        Student p = new Student("Kan","Buppaniroj");
+        Student p = new Student();
         System.out.println(p.toString());
     }
 }
